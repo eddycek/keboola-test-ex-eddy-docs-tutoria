@@ -16,8 +16,8 @@ class ConfigDefinition extends BaseConfigDefinition
         /** @noinspection NullPointerExceptionInspection */
         $parametersNode
             ->children()
-                ->scalarNode('foo')
-                    ->defaultValue('baz')
+                ->integerNode('maxUsers')
+                    ->defaultValue(100)
                 ->end()
             ->end()
         ;

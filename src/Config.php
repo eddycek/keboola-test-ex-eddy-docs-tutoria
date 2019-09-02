@@ -8,9 +8,8 @@ use Keboola\Component\Config\BaseConfig;
 
 class Config extends BaseConfig
 {
-    // @todo implement your custom getters
-    public function getFoo(): string
+    public function getMaxUsers(): int
     {
-        return $this->getValue(['parameters', 'foo']);
+        return (int) $this->getValue(['parameters', 'maxUsers']);
     }
 }

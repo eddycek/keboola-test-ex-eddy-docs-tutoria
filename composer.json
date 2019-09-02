@@ -1,6 +1,7 @@
 {
     "require": {
         "php": "^7.1",
+        "fzaninotto/faker": "^1.8",
         "keboola/php-component": "^7.0.1"
     },
     "require-dev": {
