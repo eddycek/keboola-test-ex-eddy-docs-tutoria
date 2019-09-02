@@ -9,6 +9,9 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 
 class ConfigDefinition extends BaseConfigDefinition
 {
+    /**
+     * @return ArrayNodeDefinition
+     */
     protected function getParametersDefinition(): ArrayNodeDefinition
     {
         $parametersNode = parent::getParametersDefinition();
@@ -16,8 +19,8 @@ class ConfigDefinition extends BaseConfigDefinition
         /** @noinspection NullPointerExceptionInspection */
         $parametersNode
             ->children()
-                ->scalarNode('foo')
-                    ->defaultValue('baz')
+                ->integerNode('maxUsers')
+                    ->defaultValue(100)
                 ->end()
             ->end()
         ;
