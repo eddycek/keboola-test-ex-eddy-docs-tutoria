@@ -6,7 +6,6 @@ namespace MyComponent;
 
 use RuntimeException;
 use DateTime;
-use Exception;
 use Keboola\Component\BaseComponent;
 
 class Component extends BaseComponent
